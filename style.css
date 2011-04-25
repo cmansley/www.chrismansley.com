@@ -1,0 +1,43 @@
+/* CSS by Chris Mansley
+ *  All IE hacks WILL be documented 
+ */
+
+body 
+{
+	margin: 0;
+      	padding: 0;
+      	border: 0;
+	background-color: #fff; 
+	/* font-family: Helvetica, sans-serif; */
+	font-family: 'Droid Sans', arial, serif;
+}
+
+#main 
+{
+	margin: 0 auto 0 auto;
+	/* IE HACK!!!!! 
+	 * IE <6 does not do auto margins 
+         * as above, but will center everything
+         * using text-align center  
+	 */
+	text-align: center;
+	width: 760px;
+}
+
+#header
+{
+}
+
+#content
+{
+	text-align: left;
+}
+
+#footer 
+{
+	font-size: 0.7em;
+	padding: 5px 0 5px 0;
+	clear: both;
+	width: 730px;
+	border-top: 1px solid #999;
+}
