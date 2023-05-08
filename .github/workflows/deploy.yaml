@@ -17,7 +17,8 @@ jobs:
         run: |
           git remote add deploy ${{ vars.REPO_URL }}
           git remote -v
-          git push -v deploy main
+          cat .git/config
+          git push -v deploy main:main
         env:
           # This avoids a failure when the client does not know the SSH Host already
           GIT_SSH_COMMAND: "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"        
