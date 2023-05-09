@@ -20,7 +20,7 @@ jobs:
           git branch -a
           cat .git/config
           git log --oneline
-          git push -v deploy main:main
+          git push -v -u deploy main:main
         env:
           # This avoids a failure when the client does not know the SSH Host already
           GIT_SSH_COMMAND: "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"        
